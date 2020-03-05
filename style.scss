@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900&display=swap");
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//* navigation */
+
+.navigation{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    &_logo {
+        font-size: 50px;
+        line-height: 70px;
+        font-family: "Pacifico";
+        color: rgb(38, 38, 38);
+    }
+    &_items {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    & li {
+        font-size: 16px;
+        font-family: "Raleway";
+        color: rgb(38, 38, 38);
+        font-weight: bold;
+        height: 40px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        &:hover {
+            border-top: 3px solid #ff6033;
+            border-bottom: 3px solid #00000000;
+        }
+        &:active {
+            border-top: 3px solid black;
+        }
+        & a {
+            text-decoration: none;
+            color: rgb(38, 38, 38);
+        }
+    }
+
+}
+//article block
+
+.article {
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    &--center {
+        text-align: center;
+    }
+    &--black {
+        color: rgb(38, 38, 38);
+    }
+    &__title {
+        font-size: 90px;
+        font-weight: bold;
+        margin-bottom: 25px;
+       
+        &--low {
+            font-size: 60px;
+        }
+        &--lower {
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+    &__text {
+        font-size: 17px;
+        line-height: 1.471;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+$button-orange: #ff6033;
+
+.button {
+    background-color: $button-red;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    height: 55px;
+    font-size: 20px;
+    font-family: "Raleway";
+    color: white;
+    line-height: 55px;
+    text-align: center;
+    transition: background-color 0.1s ease-in;
+    &:hover {
+        background-color: darken($button-red, 10%);
+    }
+    &--orange {
+        background-color: $button-orange;
+        &:hover {
+            background-color: darken($button-orange, 10%);
+        }
+    }
+
+}
+.h100 {
+    height: 100%;
+}
+
+.header {
+    background-image: url(img/header_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #faf9fb;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    height: 96vh;
+    position: relative;
+    &__scroll {
+        position: absolute;
+        bottom: 5vh;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        animation-name: header__scroll-bounce;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+// About us Block
+.about-us {
+    background-color: #00b0b0;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    z-index: 2;
+    &__image {
+        max-width: 100%;
+    }
+    & .article {
+         
+            text-align: center;
+        }
+    
+}

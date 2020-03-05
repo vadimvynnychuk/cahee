@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.navigation_logo {
+  font-size: 50px;
+  line-height: 70px;
+  font-family: "Pacifico";
+  color: #262626;
+}
+
+.navigation_items {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation li {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: #262626;
+  font-weight: bold;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation li:hover {
+  border-top: 3px solid #ff6033;
+  border-bottom: 3px solid #00000000;
+}
+
+.navigation li:active {
+  border-top: 3px solid black;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #262626;
+}
+
+.article {
+  font-family: "Raleway";
+  color: white;
+  padding-top: 100px;
+  
+}
+
+.article--center {
+  text-align: center;
+}
+
+.article--black {
+  color: #262626;
+}
+
+.article__title {
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.article__title--low {
+  font-size: 60px;
+}
+
+.article__title--lower {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.article__text {
+  font-size: 17px;
+  line-height: 1.471;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #f72b3b;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  height: 55px;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: white;
+  line-height: 55px;
+  text-align: center;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+}
+
+.button:hover {
+  background-color: #e6091a;
+}
+
+.button--orange {
+  background-color: #ff6033;
+}
+
+.button--orange:hover {
+  background-color: #ff3800;
+}
+
+.button:active {
+  background-color: black;
+  color: white;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.header {
+  background-image: url(img/header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #faf9fb;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  height: 96vh;
+  position: relative;
+}
+
+.header__scroll {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  animation-name: header__scroll-bounce;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+.about-us {
+  background-color: #00b0b0;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  z-index: 2;
+}
+.article__text{
+
+  font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    line-height: 1.471;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+
